@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h1> Strings</h1>
+    <p id="string1" ></p>
+    <script>
+
+         const str=' good morning';
+         console.log(str);
+         //finding string lengtH
+         const len=str.length;
+         //console.log(str.length);
+         console.log(len);
+
+         // concatenating two strings
+         const a='good';
+         const b='afternoon';
+         const c=a.concat(' ',b);
+         console.log(c);
+
+      
+          // slicing the string
+         const s= str.slice(1, 3);
+         console.log(s); 
+
+
+
+         // converting the text to uppercase
+         const d = str.toUpperCase();
+         console.log(d); 
+
+
+
+         // converting the string to an array
+         const e= str.split();
+         console.log(e);
+
+         //converting to string
+         const f=str.String();
+         console.log(f); 
+
+
+         // removing whitespace from the string
+         const g= str.trim();
+         console.log(g); 
+
+
+
+         // converting the text to Lowercase
+         const h= str.toLowerCase();
+         console.log(h); 
+
+
+         // substring
+         const i=str.substring(1,4);
+         console.log(i);
+
+         //charAt Function
+         j=str.charAt(5);
+         console.log(j);
+
+
+         document.getElementById("String1").innerHTML =str +"<br>" +len +"<br>" + a +"<br>" + b +"<br>" + c +"<br>" + d +"<br>" + e +"<br>" + f +"<br>" + g +"<br>" + h +"<br>" + + i +"<br>" + j ; 
+        
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h1> Arrays</h1>
+    <p id="Array" ></p>
+    <script>
+       let arr1 = ['y', 'a', 'm', 'i', 'n', 'i'];
+
+       // first element
+       const a=arr1[0];
+       console.log(arr1[0]);  
+
+       // second element
+       const b=arr1[1];
+       console.log(arr1[1]); 
+
+      //Accessing all array elements
+       const c=arr1;
+       console.log(arr1);
+
+       //length of the array
+       s=arr1.length;
+       console.log(s);
+
+           
+       //deleting last element from array
+        d=arr1.pop();
+
+       console.log(d);
+
+
+      //deleting first element from array
+      e=arr1.shift();
+      console.log(e);
+
+      //slicing array elements
+      f=arr1.slice(2);
+      console.log(f);
+
+
+      //concatenating two arrays
+      const arr2=['j','a','v','a','s','c','r','i','p','t'];
+      const g=arr1.concat(" ",arr2);
+      console.log(g);
+      document.getElementById("Array").innerHTML = a +"<br>" + b +"<br>" + c +"<br>" + d +"<br>" + e +"<br>" + f +"<br>" + g +"<br>" + s ; 
+
+    </script>  
+  </body>
+ </html>   
