@@ -13,4 +13,4 @@ const courseHandler = {
   
   const pCourse = new Proxy(course, courseHandler);
   console.log(pCourse.title, pCourse.length, pCourse.rating);
-
+  
