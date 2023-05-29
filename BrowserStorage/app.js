@@ -9,15 +9,14 @@ dbRequest.onsuccess = function(event) {
   db = event.target.result;
 };
 
-dbRequest.onupgradeneeded = function(event) {
-  db = event.target.result;
+dbRequest.onupgradeneeded = function(even) {
+  db = even.target.result;
 
-  const objStore = db.createObjectStore('products', { keyPath: 'id' });
-
+  const objStore = db.createObjectStore('products', { keyPath: 'id'});
   objStore.transaction.oncomplete = function(event) {
     const productsStore = db
       .transaction('products', 'readwrite')
-      .objectStore('products');
+      .objectStore('products');       
     productsStore.add({
       id: 'p1',
       title: 'A First Product',
@@ -56,3 +55,5 @@ retrBtn.addEventListener('click', () => {
     console.log(request.result);
   }
 });
+
+
